@@ -1,3 +1,36 @@
+<h1 align="center">Photon Shaders for Mac</h1>
+
+<p align="center"><b>An unofficial version of <a href="https://github.com/sixthsurge/photon">Photon</a> that works on Apple Silicon Macs (M1, M2, M3, M4).</b></p>
+
+![Photon running on an M4 Pro MacBook](docs/images/mac_m4_pro.jpg)
+
+The normal Photon doesn't load on Macs: you get "the shaderpack failed to load" or a black screen. This version fixes that and looks the same.
+
+## Download
+
+**[Download Photon for Mac (zip)](https://github.com/jspaterson000/photon/releases/latest)**
+
+## Install
+
+1. Install [Iris](https://irisshaders.dev/download) (with Sodium).
+2. In Minecraft go to **Options → Video Settings → Shader Packs → Open Shader Pack Folder**.
+3. Drop the zip into that folder. Don't unzip it.
+4. Pick **Photon-Mac** in the list and click **Apply**.
+
+Works with Iris 1.7.6 (Minecraft 1.20.1) and newer. About 50 fps on High on an M4 Pro. For more fps, turn on **TAAU** under Post-processing.
+
+## Known issues
+
+- **Black screen with the Point Blank (guns) mod:** open `config/pointblank-common.toml` and set `advancedIrisIntegrationEnabled = false`.
+- **Distant Horizons** isn't supported on Mac yet.
+- **Colored Lights** are turned off, because Macs can't run them.
+
+Found a problem? [Open an issue](https://github.com/jspaterson000/photon/issues).
+
+This is a fork. All credit for Photon goes to [SixthSurge](https://github.com/sixthsurge). The Mac changes are proposed upstream in [#670](https://github.com/sixthsurge/photon/pull/670). Please don't report Mac problems to the original project.
+
+---
+
 <br><br>
 
 <h1 align = "center">Photon Shaders</h1>
