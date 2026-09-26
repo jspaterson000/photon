@@ -1,0 +1,24 @@
+# Photon Shaders for Mac
+
+> Unofficial fork of the Photon Minecraft shader pack (by SixthSurge) that works on Apple Silicon Macs (M1, M2, M3, M4) with Iris. The official Photon fails on Macs with "The shaderpack failed to load", "Implementation limit of 16 active fragment shader samplers exceeded", "No more available texture units while activating sampler shadowtex0" or "This PC does not support compute shaders". This version fixes those errors.
+
+## Download
+
+- [Latest release (zip)](https://github.com/jspaterson000/photon/releases/latest): put the zip in `.minecraft/shaderpacks` (do not unzip) and select it in Iris.
+
+## Requirements
+
+- Minecraft with Fabric, Sodium and Iris 1.7.6 or newer (tested on Minecraft 1.20.1 with Iris 1.7.6, and on Iris 1.11.6).
+
+## Troubleshooting
+
+- Black screen: if the Point Blank mod is installed, set `advancedIrisIntegrationEnabled = false` in `config/pointblank-common.toml` and restart Minecraft.
+- Distant Horizons is not supported on Mac yet.
+- Colored Lights are disabled on Mac (needs compute shaders).
+- More fps: enable TAAU in Post-processing.
+
+## More
+
+- [README](https://github.com/jspaterson000/photon/blob/mac/README.md)
+- [Upstream pull request](https://github.com/sixthsurge/photon/pull/670)
+- [Original Photon](https://github.com/sixthsurge/photon)
